@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #020202;
+    color: #9395AC;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #9395AC;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#sudoku-container {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    border: 4px solid #222;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(145deg, #020202, #1D1F2B);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), -4px -4px 8px rgba(50, 50, 60, 0.3);
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #9395AC;
+    border: 1px solid #1D1F2B;
+    border-radius:2px;
+    background-color: #1D1F2B;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5), inset -2px -2px 4px rgba(60, 60, 80, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #163979;
+}
+
+input:nth-child(3n) {
+    border-right: 2px solid #444;
+}
+
+input:nth-child(n+19):nth-child(-n+27),
+input:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 2px solid #444;
+}
+
+#sudoku-container > input:nth-child(1),
+#sudoku-container > input:nth-child(2),
+#sudoku-container > input:nth-child(3),
+#sudoku-container > input:nth-child(7),
+#sudoku-container > input:nth-child(8),
+#sudoku-container > input:nth-child(9),
+#sudoku-container > input:nth-child(10),
+#sudoku-container > input:nth-child(11),
+#sudoku-container > input:nth-child(12),
+#sudoku-container > input:nth-child(16),
+#sudoku-container > input:nth-child(17),
+#sudoku-container > input:nth-child(18),
+#sudoku-container > input:nth-child(19),
+#sudoku-container > input:nth-child(20),
+#sudoku-container > input:nth-child(21),
+#sudoku-container > input:nth-child(25),
+#sudoku-container > input:nth-child(26),
+#sudoku-container > input:nth-child(27),
+#sudoku-container > input:nth-child(31),
+#sudoku-container > input:nth-child(32),
+#sudoku-container > input:nth-child(33),
+#sudoku-container > input:nth-child(40),
+#sudoku-container > input:nth-child(41),
+#sudoku-container > input:nth-child(42),
+#sudoku-container > input:nth-child(49),
+#sudoku-container > input:nth-child(50),
+#sudoku-container > input:nth-child(51),
+#sudoku-container > input:nth-child(55),
+#sudoku-container > input:nth-child(56),
+#sudoku-container > input:nth-child(57),
+#sudoku-container > input:nth-child(61),
+#sudoku-container > input:nth-child(62),
+#sudoku-container > input:nth-child(63),
+#sudoku-container > input:nth-child(64),
+#sudoku-container > input:nth-child(65),
+#sudoku-container > input:nth-child(66),
+#sudoku-container > input:nth-child(70),
+#sudoku-container > input:nth-child(71),
+#sudoku-container > input:nth-child(72),
+#sudoku-container > input:nth-child(73),
+#sudoku-container > input:nth-child(74),
+#sudoku-container > input:nth-child(75),
+#sudoku-container > input:nth-child(79),
+#sudoku-container > input:nth-child(80),
+#sudoku-container > input:nth-child(81) {
+    background-color: #2A2F42;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #2C3667;
+    color: #9395AC;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(60, 60, 80, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #163979;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
