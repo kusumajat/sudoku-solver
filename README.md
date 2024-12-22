@@ -3,9 +3,7 @@
 Sudoku Solver is a web-based application that solves Sudoku puzzles interactively. Users can manually input numbers into the grid or use the auto-solve feature to complete the puzzle.  
 
 ## Demo  
-https://github.com/user-attachments/assets/1f374031-7e84-4bcb-8375-859248dd04ce
-
-
+![demo](https://github.com/user-attachments/assets/902b0301-5da8-4f8c-8dc6-fe706ff6a7d6)
 
 ---
 
@@ -16,6 +14,6 @@ https://github.com/user-attachments/assets/1f374031-7e84-4bcb-8375-859248dd04ce
 ---
 
 ## Technologies Used  
-- **HTML5**: Provides the structure and grid layout.  
-- **CSS3**: For styling the grid and responsive design.  
+- **HTML**: Provides the structure and grid layout.  
+- **CSS**: For styling the grid and responsive design.  
 - **JavaScript**: Core logic for solving puzzles and handling user interactions.  
